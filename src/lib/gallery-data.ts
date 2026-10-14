@@ -153,11 +153,6 @@ export const pieces: GalleryPiece[] = [
   },
   {
     cat: "digital",
-    src: "/gallery/Illustration/OvSulfur_3_7_24.webp",
-    w: 1099, h: 1491,
-  },
-  {
-    cat: "digital",
     src: "/gallery/Illustration/Umi_BG_PipelineTests_Joanna-2-02-25_riverWIP.webp",
     w: 1920, h: 1080,
   },
@@ -168,12 +163,12 @@ export const pieces: GalleryPiece[] = [
   },
   {
     cat: "digital",
-    src: "/gallery/Illustration/Madoka_2_3_26.webp",
+    src: "/gallery/Sketches/Madoka_2_3_26.webp",
     w: 1080, h: 1350,
   },
   {
     cat: "digital",
-    src: "/gallery/Illustration/Mami_3-16-26.webp",
+    src: "/gallery/Sketches/Mami_3-16-26.webp",
     w: 1856, h: 2464,
   },
 
