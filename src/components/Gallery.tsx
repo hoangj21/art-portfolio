@@ -23,12 +23,11 @@ const filters: { cat: CategoryFilter; label: string }[] = [
   { cat: "photography", label: "Photography" },
 ];
 
-function MasonryCard({ data: piece, width }: { data: GalleryItem; width: number }) {
+function MasonryCard({ data: piece, width, tapped }: { data: GalleryItem; width: number; tapped?: boolean }) {
   const height = Math.round(width * (piece.h / piece.w));
 
   return (
-    <div className="gallery-card" style={{ width, height }}>
-      <span className="card-tag card-tag-static">{catLabels[piece.cat]}</span>
+    <div className={`gallery-card${tapped ? " tapped" : ""}`} style={{ width, height }}>
       {piece.video ? (
         <video
           src={piece.src}
@@ -62,6 +61,7 @@ function MasonryCard({ data: piece, width }: { data: GalleryItem; width: number 
 export function Gallery() {
   const [activeCat, setActiveCat] = useState<CategoryFilter>("all");
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+  const [tappedIndex, setTappedIndex] = useState<number | null>(null);
 
   const filtered = useMemo(
     () => {
@@ -71,11 +71,32 @@ export function Gallery() {
     [activeCat]
   );
 
+  /* On touch: first tap reveals overlay, second tap opens lightbox.
+     On desktop (hover): click goes straight to lightbox. */
+  const isTouchRef = React.useRef(false);
+
+  const handleTouch = useCallback(() => {
+    isTouchRef.current = true;
+  }, []);
+
   const handleClick = useCallback(
     (index: number) => {
-      setLightboxIndex(index);
+      if (isTouchRef.current) {
+        isTouchRef.current = false; // reset for next event
+        if (tappedIndex === index) {
+          // second tap → open lightbox
+          setLightboxIndex(index);
+          setTappedIndex(null);
+        } else {
+          // first tap → reveal overlay
+          setTappedIndex(index);
+        }
+      } else {
+        // mouse click → straight to lightbox
+        setLightboxIndex(index);
+      }
     },
-    []
+    [tappedIndex]
   );
 
   function navLightbox(dir: number) {
@@ -87,12 +108,16 @@ export function Gallery() {
     (props: { data: GalleryItem; width: number; index: number }) => {
       const idx = props.data._index;
       return (
-        <div onClick={() => handleClick(idx)}>
-          <MasonryCard data={props.data} width={props.width} />
+        <div
+          onTouchStart={handleTouch}
+          onClick={() => handleClick(idx)}
+          className={tappedIndex === idx ? "gallery-card-wrapper tapped-wrapper" : "gallery-card-wrapper"}
+        >
+          <MasonryCard data={props.data} width={props.width} tapped={tappedIndex === idx} />
         </div>
       );
     },
-    [handleClick]
+    [handleClick, handleTouch, tappedIndex]
   );
 
   return (

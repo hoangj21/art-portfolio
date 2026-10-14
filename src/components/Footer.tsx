@@ -29,7 +29,7 @@ export function Footer() {
           </div>
           <p className="text-[12px] text-fg-muted opacity-60">© 2026 Joanna Hoang</p>
           <div className="mt-2">
-            <a href="#" className="text-[12px] text-accent no-underline opacity-80 hover:opacity-100 hover:text-accent-bright transition-opacity">
+           <a href="https://joannahoang.me" target="_blank" rel="noopener noreferrer" className="text-[12px] text-accent ...">
               Solutions Engineer Portfolio →
             </a>
           </div>

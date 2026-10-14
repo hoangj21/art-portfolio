@@ -62,7 +62,7 @@ export default function AboutPage() {
               ))}
             </div>
           </div>
-          <a href="#" className="about-cta">
+          <a href="https://joannahoang.me" target="_blank" rel="noopener noreferrer" className="about-cta">
             View my engineering portfolio →
           </a>
         </div>

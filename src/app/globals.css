@@ -460,12 +460,17 @@ body {
   -webkit-backdrop-filter: blur(4px);
 }
 
-.card-tag-static {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 2;
-  opacity: 0.45;
+/* On touch devices, tap a card to reveal the overlay; tap again to dismiss */
+@media (hover: none) {
+  .gallery-card:active .card-overlay,
+  .gallery-card.tapped .card-overlay {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .gallery-card:active .card-img,
+  .gallery-card.tapped .card-img {
+    filter: brightness(0.65) saturate(1.1);
+  }
 }
 
 .card-title {
