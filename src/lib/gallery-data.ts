@@ -138,12 +138,12 @@ export const pieces: GalleryPiece[] = [
   },
   {
     cat: "digital",
-    src: "/gallery/Illustration/CyrusExpressions_3-6-25.webp",
+    src: "/gallery/Sketches/CyrusExpressions_3-6-25.webp",
     w: 2347, h: 2435,
   },
   {
     cat: "digital",
-    src: "/gallery/Sketches/CyrusExpressions_3-8-25.webp",
+    src: "/gallery/Illustration/CyrusExpressions_3-8-25.webp",
     w: 900, h: 1237,
   },
   {
