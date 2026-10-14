@@ -406,26 +406,6 @@ body {
   filter: brightness(0.65) saturate(1.1);
 }
 
-.gallery-card .card-overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 14px;
-  background: linear-gradient(transparent, rgba(10,10,10,0.92));
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-  opacity: 0;
-  transform: translateY(8px);
-  transition: all 0.3s ease;
-}
-
-.gallery-card:hover .card-overlay {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 /* Red accent bar on hover */
 .gallery-card::after {
   content: '';
@@ -458,19 +438,6 @@ body {
   border: 1px solid rgba(196,32,51,0.3);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-}
-
-/* On touch devices, tap a card to reveal the overlay; tap again to dismiss */
-@media (hover: none) {
-  .gallery-card:active .card-overlay,
-  .gallery-card.tapped .card-overlay {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .gallery-card:active .card-img,
-  .gallery-card.tapped .card-img {
-    filter: brightness(0.65) saturate(1.1);
-  }
 }
 
 .card-title {
