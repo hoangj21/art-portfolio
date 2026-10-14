@@ -38,10 +38,26 @@ export const pieces: GalleryPiece[] = [
     src: "/gallery/Illustration/CyrusRound2_7_6_23 compress.webp",
     w: 1080, h: 1080,
   },
-  {
+    {
+    cat: "animation",
+    src: "/gallery/Illustration/Alina_9-12-25.mp4",
+    w: 1080, h: 1432,
+    video: true,
+  },
+    {
     cat: "digital",
-    src: "/gallery/Illustration/Alina_3-17-25_preprocess.webp",
-    w: 1856, h: 2464,
+    src: "/gallery/Illustration/FleshWoman_7-20-26.webp",
+    w: 3000, h: 3750,
+  },
+    {
+    cat: "ink",
+    src: "/gallery/Ink/MentalCruelty_3_6_24.webp",
+    w: 1890, h: 2415,
+  },
+  {
+    cat: "ink",
+    src: "/gallery/Ink/OvSulfur_3_7_24.webp",
+    w: 1099, h: 1491,
   },
   {
     cat: "digital",
@@ -55,11 +71,6 @@ export const pieces: GalleryPiece[] = [
   },
   {
     cat: "digital",
-    src: "/gallery/Illustration/FleshWoman_7-20-26.webp",
-    w: 3000, h: 3750,
-  },
-  {
-    cat: "digital",
     src: "/gallery/Illustration/Curly_11_22_24_1080.webp",
     w: 1080, h: 1209,
   },
@@ -68,6 +79,18 @@ export const pieces: GalleryPiece[] = [
     src: "/gallery/Illustration/Mirror_10_9_24_1080.webp",
     w: 1080, h: 1209,
   },
+    // ── Animation & Process ───────────────────────────────────────────
+  {
+    cat: "animation",
+    src: "/gallery/Illustration/AlinaBlink_8-10-25.mp4",
+    w: 1280, h: 1230,
+    video: true,
+  },
+/*     {
+    cat: "digital",
+    src: "/gallery/Illustration/Alina_3-17-25_preprocess.webp",
+    w: 1856, h: 2464,
+  }, */
   {
     cat: "sequential",
     src: "/gallery/Comics/Catpaku 1 edit.webp",
@@ -172,31 +195,7 @@ export const pieces: GalleryPiece[] = [
     w: 1856, h: 2464,
   },
 
-  // ── Animation & Process ───────────────────────────────────────────
-  {
-    cat: "animation",
-    src: "/gallery/Illustration/AlinaBlink_8-10-25.mp4",
-    w: 1280, h: 1230,
-    video: true,
-  },
-  {
-    cat: "animation",
-    src: "/gallery/Illustration/Alina_9-12-25.mp4",
-    w: 1080, h: 1432,
-    video: true,
-  },
-
   // ── Ink & Traditional ────────────────────────────────────────────
-  {
-    cat: "ink",
-    src: "/gallery/Ink/MentalCruelty_3_6_24.webp",
-    w: 1890, h: 2415,
-  },
-  {
-    cat: "ink",
-    src: "/gallery/Ink/OvSulfur_3_7_24.webp",
-    w: 1099, h: 1491,
-  },
   {
     cat: "ink",
     src: "/gallery/Ink/PleinAirApril_2026.webp",
