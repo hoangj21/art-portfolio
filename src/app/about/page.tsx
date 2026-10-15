@@ -34,9 +34,7 @@ export default function AboutPage() {
           <div className="about-bio">
             <p>
               I&apos;m a Portland-based illustrator working across digital, traditional ink, and
-              comics. My work pulls from cyberpunk, sci-fi, horror, industrial, and metal aesthetics. I admire
-              both beauty and grit: the harsh lines and oppressive concrete of a brutalist cityscape
-              one day, the delicate organic forms of a flower in bloom the next. My primary tools
+              comics. My work pulls from sci-fi, horror, industrial, and metal aesthetics. My primary tools
               are Clip Studio Paint, a Wacom Cintiq, fountain pens, and india ink.
             </p>
             <p>
@@ -48,7 +46,7 @@ export default function AboutPage() {
             <p>
               By day, I&apos;m a solutions engineer working with security systems and enterprise software. 
               My background in computer science and programming is partially what made me so interested in the 
-              cyberpunk and industrial aesthetics that inform my work. This site is built by yours truly with 
+              cyberpunk aesthetics that inform my work. This site is built by yours truly with 
               Next.js, React, and Tailwind CSS.
             </p>
           </div>

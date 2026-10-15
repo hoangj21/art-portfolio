@@ -45,6 +45,10 @@ export const metadata: Metadata = {
   title: "Joanna Hoang — Art Portfolio",
   description: "Illustration, sequential art, ink, and photography by Joanna Hoang. Portland, OR.",
   keywords: ["illustration", "art", "portfolio", "commissions", "comics", "ink", "photography"],
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
