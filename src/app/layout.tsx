@@ -42,7 +42,7 @@ const shareTechMono = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://artsfromjoanna.com"),
+  metadataBase: new URL("https://www.artsfromjoanna.com"),
   title: "Joanna Hoang — Art Portfolio",
   description: "Illustration, sequential art, ink, and photography by Joanna Hoang. Portland, OR.",
   keywords: ["illustration", "art", "portfolio", "commissions", "comics", "ink", "photography"],
@@ -52,13 +52,13 @@ export const metadata: Metadata = {
     siteName: "Joanna Hoang — Art Portfolio",
     title: "Joanna Hoang — Art Portfolio",
     description: "Illustration, sequential art, ink, and photography by Joanna Hoang. Portland, OR.",
-    images: ["/opengraph-image"],
+    images: ["/og-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Joanna Hoang — Art Portfolio",
     description: "Illustration, sequential art, ink, and photography by Joanna Hoang. Portland, OR.",
-    images: ["/opengraph-image"],
+    images: ["/og-image.png"],
   },
   icons: {
     icon: "/icon.svg",
