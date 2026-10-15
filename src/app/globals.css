@@ -44,10 +44,6 @@ body {
 }
 
 /* ═══ KEYFRAME ANIMATIONS ═══ */
-@keyframes scanline {
-  0% { transform: translateY(-100vh); }
-  100% { transform: translateY(100vh); }
-}
 @keyframes pulse-glow {
   0%, 100% { opacity: 0.15; }
   50% { opacity: 0.35; }
@@ -185,27 +181,6 @@ body {
     linear-gradient(0deg, transparent 49.5%, rgba(196,32,51,1) 49.5%, rgba(196,32,51,1) 50.5%, transparent 50.5%),
     linear-gradient(90deg, transparent 49.5%, rgba(196,32,51,1) 49.5%, rgba(196,32,51,1) 50.5%, transparent 50.5%);
   background-size: 120px 120px;
-}
-
-/* ═══ SCAN LINE ═══ */
-.scan-line {
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 2;
-  overflow: hidden;
-}
-
-.scan-line::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(196,32,51,0.2), var(--accent-bright), rgba(196,32,51,0.2), transparent);
-  box-shadow: 0 0 12px rgba(196,32,51,0.15), 0 0 40px rgba(196,32,51,0.06);
-  opacity: 0.5;
-  animation: scanline 14s linear infinite;
 }
 
 /* ═══ HERO ═══ */

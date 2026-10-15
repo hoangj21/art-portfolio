@@ -54,7 +54,7 @@ export const metadata: Metadata = {
     description: "Illustration, sequential art, ink, and photography by Joanna Hoang. Portland, OR.",
     images: [
       {
-        url: "/social-preview-v2.png",
+        url: "/social-preview-v4.png",
         width: 1200,
         height: 630,
         alt: "Screenshot of Joanna Hoang's art portfolio homepage",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Joanna Hoang — Art Portfolio",
     description: "Illustration, sequential art, ink, and photography by Joanna Hoang. Portland, OR.",
-    images: ["/social-preview-v2.png"],
+    images: ["/social-preview-v4.png"],
   },
   icons: {
     icon: "/icon.svg",

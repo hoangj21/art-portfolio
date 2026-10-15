@@ -8,7 +8,6 @@ export default function Home() {
     <>
       {/* Hero */}
       <header className="hero section-block section-block--glow cyan-glow-br">
-        <div className="scan-line" />
         <div className="circuit-pattern" />
         <div className="hero-bg-glow" />
         <GeoDecoration variant="gallery-hero" />
