@@ -52,13 +52,20 @@ export const metadata: Metadata = {
     siteName: "Joanna Hoang — Art Portfolio",
     title: "Joanna Hoang — Art Portfolio",
     description: "Illustration, sequential art, ink, and photography by Joanna Hoang. Portland, OR.",
-    images: ["/og-image.png"],
+    images: [
+      {
+        url: "/homepage-preview-v2.png",
+        width: 2700,
+        height: 1418,
+        alt: "Screenshot of Joanna Hoang's art portfolio homepage",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Joanna Hoang — Art Portfolio",
     description: "Illustration, sequential art, ink, and photography by Joanna Hoang. Portland, OR.",
-    images: ["/og-image.png"],
+    images: ["/homepage-preview-v2.png"],
   },
   icons: {
     icon: "/icon.svg",
